@@ -78,6 +78,18 @@ namespace ExnessTask.Tests
             Assert.AreEqual(HttpStatusCode.NotFound, vendorRespone.HttpStatusCode, "Проверка кода ответа");
         }
 
+        [Test]
+        public void GetVendor_EmptyVendor()
+        {
+            #region Presteps
+            #endregion
+
+            var vendorRespone = _apiClient.GetVendor("").GetAwaiter().GetResult();
+
+            Assert.IsFalse(vendorRespone.IsSuccess, "Проверка неудачного ответа");
+            Assert.AreEqual(HttpStatusCode.NotFound, vendorRespone.HttpStatusCode, "Проверка кода ответа");
+        }
+
         [SetUp]
         public void SetUp()
         {
