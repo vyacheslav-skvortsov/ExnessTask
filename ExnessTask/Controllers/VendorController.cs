@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net;
+using System.Threading.Tasks;
 using System.Web.Http;
 using ExnessTask.DataRepository;
 using ExnessTask.Helpers;
@@ -14,7 +15,6 @@ namespace ExnessTask.Controllers
             vendorRepository=new VendorRepository(ConfigHelper.GetSetting("mongoConnectionString"));
         }
 
-
         // GET: api/vendor/{id}
         [Route("{id}")]
         public async Task<IHttpActionResult> GetVendor(string id)
@@ -22,7 +22,7 @@ namespace ExnessTask.Controllers
             var vendor = await vendorRepository.GetVendorById(id);
             if (vendor == null)
             {
-                return NotFound();
+               return Content(HttpStatusCode.NotFound, new { message = $"Vendor {id} is not found" });
             }
             return Json(vendor);
         }
