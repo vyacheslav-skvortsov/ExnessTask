@@ -1,5 +1,5 @@
 cd C:\Program Files\MongoDB\bin\
-mongo
+mongod
 use exness
 s = {Name: "Exness"}
 db.exness.insert(s);
