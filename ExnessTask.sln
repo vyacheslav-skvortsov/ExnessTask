@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExnessTask", "ExnessTask\ExnessTask.csproj", "{218C2806-5F46-46AD-A2FC-B65F38F8325B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExnessTask.Tests", "ExnessTask.Tests\ExnessTask.Tests.csproj", "{202ADC21-DBC0-4D30-A586-0DB85726D498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExnessTask.WebApiClient", "ExnessTask.WebApiClient\ExnessTask.WebApiClient.csproj", "{6EA0704C-640C-4CDA-9667-F35FC1C2AE63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218C2806-5F46-46AD-A2FC-B65F38F8325B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218C2806-5F46-46AD-A2FC-B65F38F8325B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218C2806-5F46-46AD-A2FC-B65F38F8325B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218C2806-5F46-46AD-A2FC-B65F38F8325B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202ADC21-DBC0-4D30-A586-0DB85726D498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202ADC21-DBC0-4D30-A586-0DB85726D498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202ADC21-DBC0-4D30-A586-0DB85726D498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202ADC21-DBC0-4D30-A586-0DB85726D498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA0704C-640C-4CDA-9667-F35FC1C2AE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA0704C-640C-4CDA-9667-F35FC1C2AE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA0704C-640C-4CDA-9667-F35FC1C2AE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA0704C-640C-4CDA-9667-F35FC1C2AE63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
