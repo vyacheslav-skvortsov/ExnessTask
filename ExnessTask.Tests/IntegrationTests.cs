@@ -90,6 +90,18 @@ namespace ExnessTask.Tests
             Assert.AreEqual(HttpStatusCode.NotFound, vendorRespone.HttpStatusCode, "Проверка кода ответа");
         }
 
+        [Test, Description("Тест проверяет ответ сервера на запросе к скрытому адресу")]
+        public void GetVendor_UnexpectedUri()
+        {
+            #region Presteps
+            #endregion
+
+            var vendorRespone = _apiClient.GetApi("").GetAwaiter().GetResult();
+
+            Assert.IsFalse(vendorRespone.IsSuccess, "Проверка неудачного ответа");
+            Assert.AreEqual(HttpStatusCode.NotFound, vendorRespone.HttpStatusCode, "Проверка кода ответа");
+        }
+
         [SetUp]
         public void SetUp()
         {

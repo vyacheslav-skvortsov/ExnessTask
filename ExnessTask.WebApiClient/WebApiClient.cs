@@ -12,5 +12,10 @@ namespace ExnessTask.WebApiClient
         {
             return await GetAsync<VendorDto>($"vendor/{vendorId}");
         }
+
+        public async Task<ApiResponse<VendorDto>> GetApi(string vendorId)
+        {
+            return await GetAsync<VendorDto>("");
+        }
     }
 }
